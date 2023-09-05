@@ -1,0 +1,65 @@
+{% extends 'orderapp/base.html' %}
+{% load static %}
+{% block content %}
+<div class="order_block">
+<div class="order_text">
+    Your purchases, {{ user.nickname|title}}
+</div>
+<table class="order_table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Created</th>
+        <th>Last update</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for item in object_list %}
+            {% if item.is_active %}
+            <tr>
+                <td>{{ item.pk }}</td>
+                <td>{{ item.created_at|date:"Y-m-d H:i:s" }}</td>
+                <td>{{ item.updated_at|date:"Y-m-d H:i:s" }}</td>
+                <td>{{ item.get_status_display }}</td>
+                <td>
+                    <a href="{% url 'order:read' item.pk %}">
+                        Details
+                    </a>
+                </td>
+                <td>
+                    {% if item.status == 'FM' %}
+                      <a href="{% url 'order:update' item.pk %}">
+                        Update
+                      </a>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if item.status == 'FM' %}
+                      <a href="{% url 'order:delete' item.pk %}">
+                          Delete
+                      </a>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if item.status == 'STP' %}
+                      <a href="{% url 'order:payment' item.pk %}">
+                          Pay
+                      </a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+<div class="order_button_block">
+    <a href="{% url 'home' %}" class="order_button">
+        Home
+    </a>
+    <a href="{% url 'order:create' %}" class="order_button">
+        New order
+    </a>
+</div>
+</div>
+{% endblock %}

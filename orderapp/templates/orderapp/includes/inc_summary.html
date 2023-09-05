@@ -1,0 +1,17 @@
+<div class="summary_block">
+{% if object %}
+   <div class="summary_text">Order number: {{ object.pk }} created {{ object.created_at|date:"Y-m-d H:i:s" }}</div>
+   <div class="summary_text">Player: {{ user.nickname }} </div>
+   <div class="summary_text">Updated: {{ object.updated_at|date:"Y-m-d H:i:s" }}</div>
+   <div class="summary_text">Status: {{ object.get_status_display }}</div>
+   {% with object_summary=object.get_summary %}
+      <div class="summary_text"> Total products: <span class="order_total_quantity">{{ object_summary.total_quantity }}</span></div>
+      <div class="summary_text summary_cost">Total cost: <span class="order_total_cost">{{ object_summary.total_cost }}</span> RP</div>
+   {% endwith %}
+{% else %}
+   <div class="summary_text">New order</div>
+   <div class="summary_text">Player: {{ user.nickname }} </div>
+   <div class="summary_text"> Total products: <span class="order_total_quantity">{% if object.total_quantity %} {{ object.total_quantity }} {% else %} 0 {% endif %}</span></div>
+   <div class="summary_text summary_cost">Total cost: <span class="order_total_cost">{% if object.total_cost %} {{ object.total_cost }}  {% else %} 0 {% endif %}</span> RP</div>
+{% endif %}
+</div>

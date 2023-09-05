@@ -1,0 +1,9 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+{% include 'storeapp/includes/inc_store_menu.html' %}
+<div class="store_content">
+    <p class="total_cost">You have spent: {{ total_cost_rp }} RP</p>
+    <p class="total_cost">You have spent: {{ total_cost_be }} BE</p>
+</div>
+{% endblock %}

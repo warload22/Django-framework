@@ -1,0 +1,262 @@
+[
+  {
+    "category": "skins",
+    "champion": "Aatrox",
+    "name": "Justicar Aatrox",
+    "image": "skins/Justicar_Aatrox.jpg",
+    "price_rp": 975
+  },
+  {
+    "category": "skins",
+    "champion": "Aatrox",
+    "name": "Blood Moon Aatrox",
+    "image": "skins/Blood_Moon_Aatrox.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Aatrox",
+    "name": "Odyssey Aatrox",
+    "image": "skins/Odyssey_Aatrox.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Ahri",
+    "name": "Arcade Ahri",
+    "image": "skins/Arcade_Ahri.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Ahri",
+    "name": "Elderwood Ahri",
+    "image": "skins/Elderwood_Ahri.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Ahri",
+    "name": "Spirit Blossom Ahri",
+    "image": "skins/Spirit_Blossom_Ahri.jpg",
+    "price_rp": 1820,
+    "division": "legendary"
+  },
+  {
+    "category": "skins",
+    "champion": "Akali",
+    "name": "Nurse Akali",
+    "image": "skins/Nurse_Akali.jpg",
+    "price_rp": 975
+  },
+  {
+    "category": "skins",
+    "champion": "Akali",
+    "name": "PROJECT: Akali",
+    "image": "skins/Project_Akali.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Akali",
+    "name": "True Damage Akali",
+    "image": "skins/True_Damage_Akali.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Akshan",
+    "name": "Cyber Pop Akshan",
+    "image": "skins/Cyber_Pop_Akshan.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Alistar",
+    "name": "Hextech Alistar",
+    "image": "skins/Hextech_Alistar.jpg",
+    "price_rp": 0,
+    "division": "mythic"
+  },
+  {
+    "category": "skins",
+    "champion": "Alistar",
+    "name": "Lunar Beast Alistar",
+    "image": "skins/Lunar_Beast_Alistar.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Alistar",
+    "name": "Conqueror Alistar",
+    "image": "skins/Conqueror_Alistar.jpg",
+    "price_rp": 975
+  },
+  {
+    "category": "skins",
+    "champion": "Amumu",
+    "name": "Hextech Amumu",
+    "image": "skins/Hextech_Amumu.jpg",
+    "price_rp": 0,
+    "division": "mythic"
+  },
+  {
+    "category": "skins",
+    "champion": "Amumu",
+    "name": "Infernal Amumu",
+    "image": "skins/Infernal_Amumu.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Amumu",
+    "name": "Pumpkin Prince Amumu",
+    "image": "skins/Pumpkin_Prince_Amumu.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Anivia",
+    "name": "Cosmic Flight Anivia",
+    "image": "skins/Cosmic_Flight_Anivia.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Anivia",
+    "name": "Papercraft Anivia",
+    "image": "skins/Papercraft_Anivia.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Anivia",
+    "name": "Blackfrost Anivia",
+    "image": "skins/Blackfrost_Anivia.jpg",
+    "price_rp": 1820,
+    "division": "legendary"
+  },
+  {
+    "category": "skins",
+    "champion": "Annie",
+    "name": "Super Galaxy Annie",
+    "image": "skins/Super_Galaxy_Annie.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Annie",
+    "name": "Hextech Annie",
+    "image": "skins/Hextech_Annie.jpg",
+    "price_rp": 0,
+    "division": "mythic"
+  },
+  {
+    "category": "skins",
+    "champion": "Annie",
+    "name": "Lunar Beast Annie",
+    "image": "skins/Lunar_Beast_Annie.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Aphelios",
+    "name": "Lunar Beast Aphelios",
+    "image": "skins/Lunar_Beast_Aphelios.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Aphelios",
+    "name": "Nightbringer Aphelios",
+    "image": "skins/Nightbringer_Aphelios.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Ashe",
+    "name": "Championship Ashe",
+    "image": "skins/Championship_Ashe.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Ashe",
+    "name": "Fae Dragon Ashe",
+    "image": "skins/Fae_Dragon_Ashe.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Ashe",
+    "name": "PROJECT: Ashe",
+    "image": "skins/Project_Ashe.jpg",
+    "price_rp": 1820,
+    "division": "legendary"
+  },
+  {
+    "category": "skins",
+    "champion": "Aurelion Sol",
+    "name": "Storm Dragon Aurelion Sol",
+    "image": "skins/Storm_Dragon_Aurelion_Sol.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Aurelion Sol",
+    "name": "Mecha Aurelion Sol",
+    "image": "skins/Mecha_Aurelion_Sol.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Aurelion Sol",
+    "name": "Ashen Lord Aurelion Sol",
+    "image": "skins/Ashen_Lord_Aurelion_Sol.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Azir",
+    "name": "Elderwood Azir",
+    "image": "skins/Elderwood_Azir.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  },
+  {
+    "category": "skins",
+    "champion": "Azir",
+    "name": "Galactic Azir",
+    "image": "skins/Galactic_Azir.jpg",
+    "price_rp": 975
+  },
+  {
+    "category": "skins",
+    "champion": "Azir",
+    "name": "Warring Kingdoms Azir",
+    "image": "skins/Warring_Kingdoms_Azir.jpg",
+    "price_rp": 1350,
+    "division": "epic"
+  }
+]

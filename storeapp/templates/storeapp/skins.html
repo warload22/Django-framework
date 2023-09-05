@@ -1,0 +1,39 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'storeapp/includes/inc_store_menu.html' %}
+<div class="store_content">
+    <div class="content_left">
+        <input type="text" placeholder="Search" class="search">
+        <a href="#" class="show_unowned">Show Owned</a>
+        <a href="#" class="show_unowned">Champion Owned</a>
+        <ul class="selection">
+            <li><a href="#" class="selection_link">Price (RP)</a></li>
+            <li><a href="#" class="selection_link">Price (RP) desc</a></li>
+            <li><a href="#" class="selection_link">Price (BE)</a></li>
+            <li><a href="#" class="selection_link">Price (BE) desc</a></li>
+            <li><a href="#" class="selection_link">Alphabet</a></li>
+            <li><a href="#" class="selection_link">Alphabet desc</a></li>
+        </ul>
+    </div>
+    <div class="content_right">
+        {% for skin in skins %}
+        <a {% if skin.pk not in owned_skins %}href="{% url 'store:add' cat='skins' pk=skin.pk %}"{% else %}
+        href="#"{% endif %} class="store_link">
+        <div class="champion">
+            <img src="{{ skin.image.url }}" alt="{{ skin.name }}" {% if skin.pk not in owned_skins %}
+                     class="champion_img not_owned"{% else %}class="champion_img"{% endif %}>
+            <p class="champion_name">{{ skin.name|title }}</p>
+            <div class="champion_price_big only_rp">
+                <div class="champion_price_small">
+                    <img src="{% static 'img/RP.png' %}" alt="RP" class="champion_price_img">
+                    <p class="champion_price">{{ skin.price_rp }}</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

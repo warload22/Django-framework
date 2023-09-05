@@ -1,0 +1,13 @@
+{% load static %}
+
+<a href="{% url 'loot:index' %}" class=""><img src="{% static 'img/Loot_all.svg' %}" alt="all"
+    {% if request.resolver_match.url_name == 'index' %}class="loot_menu_img is_active"
+    {% else %}class="loot_menu_img"{% endif %}></a>
+<a href="{% url 'loot:materials' %}" class=""><img src="{% static 'img/Loot_chests.svg' %}" alt="materials"
+    {% if request.resolver_match.url_name == 'materials' %}class="loot_menu_img is_active"
+    {% else %}class="loot_menu_img"{% endif %}></a>
+{% for cat in categories %}
+    <a href="{% url 'loot:category' cat.name %}" class=""><img src="{{ cat.image.url }}" alt="{{ cat.name }}"
+    {% if request.resolver_match.kwargs.name == cat.name %}class="loot_menu_img is_active"
+    {% else %}class="loot_menu_img"{% endif %}></a>
+{% endfor %}

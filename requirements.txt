@@ -1,0 +1,11 @@
+psycopg2-binary
+pillow
+django
+social_auth_app_django
+requests
+pytz
+python-dotenv
+gunicorn
+psycopg2-binary
+django-debug-toolbar
+django-debug-toolbar-template-profiler

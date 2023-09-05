@@ -1,0 +1,12 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<h1 class="auth_h1">Your account is successfully activated</h1>
+<a href="{% url 'home' %}" class="auth_link">Home page</a>
+{% else %}
+<h1 class="auth_h1">Something went wrong :(</h1>
+<a href="{% url 'auth:login' %}" class="auth_link">Login page</a>
+{% endif %}
+{% endblock %}

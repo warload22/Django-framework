@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Hex chest",
+    "image": "loot/Hex_chest.png",
+    "price_rp": 125,
+    "is_purchasable": "True"
+  },
+  {
+    "name": "Masterwork chest",
+    "image": "loot/Masterwork_chest.png",
+    "price_rp": 165,
+    "is_purchasable": "True"
+  },
+  {
+    "name": "Hex key",
+    "image": "loot/Hex_key.png",
+    "price_rp": 125,
+    "is_purchasable": "True"
+  },
+  {
+    "name": "Hex chest and key",
+    "image": "loot/Hex_chest_and_key.png",
+    "price_rp": 195,
+    "is_purchasable": "True"
+  },
+  {
+    "name": "Masterwork chest and key",
+    "image": "loot/Masterwork_chest_and_key.png",
+    "price_rp": 225,
+    "is_purchasable": "True"
+  },
+  {
+    "name": "Galaxy sphere",
+    "image": "loot/Galaxy_sphere.png",
+    "price_rp": 250,
+    "is_purchasable": "True"
+  },
+  {
+    "name": "Galaxy bag",
+    "image": "loot/Galaxy_bag.png",
+    "price_rp": 0,
+    "is_purchasable": "False"
+  },
+  {
+    "name": "Gemstone",
+    "image": "loot/Gemstone.png",
+    "price_rp": 0,
+    "is_purchasable": "False"
+  }
+]

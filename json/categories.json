@@ -1,0 +1,23 @@
+[
+  {
+    "name": "champions",
+    "image": "categories/Loot_champs.svg"
+  },
+  {
+    "name": "skins",
+    "image": "categories/Loot_skins.svg"
+  },
+  {
+    "name": "emotes",
+    "image": "categories/Loot_emotes.svg"
+  },
+
+  {
+    "name": "wards",
+    "image": "categories/Loot_wards.svg"
+  },
+  {
+    "name": "icons",
+    "image": "categories/Loot_icons.svg"
+  }
+]

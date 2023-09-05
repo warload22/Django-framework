@@ -1,0 +1,15 @@
+<div class="sub_menu">
+    <a href="{% url 'store:index' %}"
+       {% if request.resolver_match.route == "store/" %}class="sub_menu_link is_active"
+        {% else %}class="sub_menu_link"{% endif %}>Featured</a>
+    {% for cat in categories %}
+    <a href="{% url 'store:category' cat.name %}"
+       {% if request.resolver_match.kwargs.name == cat.name or cat.name in request.resolver_match.route %}
+       class="sub_menu_link is_active"
+        {% else %}class="sub_menu_link"{% endif %}>{{ cat.name|title }}</a>
+    {% endfor %}
+    <a href="{% url 'store:category' 'loot' %}"
+       {% if 'loot' in request.resolver_match.route %}
+       class="sub_menu_link is_active"
+        {% else %}class="sub_menu_link"{% endif %}>Loot</a>
+</div>

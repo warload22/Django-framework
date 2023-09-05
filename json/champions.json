@@ -1,0 +1,509 @@
+[
+  {
+    "category": "champions",
+    "name": "Aatrox",
+    "image": "champions/Aatrox.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "juggernaut"
+  },
+  {
+    "category": "champions",
+    "name": "Ahri",
+    "image": "champions/Ahri.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "burst"
+  },
+  {
+    "category": "champions",
+    "name": "Akali",
+    "image": "champions/Akali.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "assassin"
+  },
+  {
+    "category": "champions",
+    "name": "Akshan",
+    "image": "champions/Akshan.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Alistar",
+    "image": "champions/Alistar.jpg",
+    "price_rp": 585,
+    "price_be": 1350,
+    "role": "vanguard"
+  },
+  {
+    "category": "champions",
+    "name": "Amumu",
+    "image": "champions/Amumu.jpg",
+    "price_rp": 260,
+    "price_be": 450,
+    "role": "vanguard"
+  },
+  {
+    "category": "champions",
+    "name": "Anivia",
+    "image": "champions/Anivia.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "battlemage"
+  },
+  {
+    "category": "champions",
+    "name": "Annie",
+    "image": "champions/Annie.jpg",
+    "price_rp": 260,
+    "price_be": 450,
+    "role": "burst"
+  },
+  {
+    "category": "champions",
+    "name": "Aphelios",
+    "image": "champions/Aphelios.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Ashe",
+    "image": "champions/Ashe.jpg",
+    "price_rp": 260,
+    "price_be": 450,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Aurelion Sol",
+    "image": "champions/Aurelion_Sol.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "battlemage"
+  },
+  {
+    "category": "champions",
+    "name": "Azir",
+    "image": "champions/Azir.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Bard",
+    "image": "champions/Bard.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "catcher"
+  },
+  {
+    "category": "champions",
+    "name": "Blitzcrank",
+    "image": "champions/Blitzcrank.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "catcher"
+  },
+  {
+    "category": "champions",
+    "name": "Brand",
+    "image": "champions/Brand.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "burst"
+  },
+  {
+    "category": "champions",
+    "name": "Braum",
+    "image": "champions/Braum.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "warden"
+  },
+  {
+    "category": "champions",
+    "name": "Caitlyn",
+    "image": "champions/Caitlyn.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Camille",
+    "image": "champions/Camille.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "diver"
+  },
+  {
+    "category": "champions",
+    "name": "Cassiopeia",
+    "image": "champions/Cassiopeia.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "battlemage"
+  },
+  {
+    "category": "champions",
+    "name": "Cho'Gath",
+    "image": "champions/Cho_Gath.jpg",
+    "price_rp": 585,
+    "price_be": 1350,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Corki",
+    "image": "champions/Corki.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Darius",
+    "image": "champions/Darius.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "juggernaut"
+  },
+  {
+    "category": "champions",
+    "name": "Diana",
+    "image": "champions/Diana.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "assassin",
+    "role_b": "diver"
+  },
+  {
+    "category": "champions",
+    "name": "Dr. Mundo",
+    "image": "champions/Dr_Mundo.jpg",
+    "price_rp": 260,
+    "price_be": 450,
+    "role": "juggernaut"
+  },
+  {
+    "category": "champions",
+    "name": "Draven",
+    "image": "champions/Draven.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Ekko",
+    "image": "champions/Ekko.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "assassin"
+  },
+  {
+    "category": "champions",
+    "name": "Elise",
+    "image": "champions/Elise.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "diver"
+  },
+  {
+    "category": "champions",
+    "name": "Evelynn",
+    "image": "champions/Evelynn.jpg",
+    "price_rp": 585,
+    "price_be": 1350,
+    "role": "assassin"
+  },
+  {
+    "category": "champions",
+    "name": "Ezreal",
+    "image": "champions/Ezreal.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Fiddlesticks",
+    "image": "champions/Fiddlesticks.jpg",
+    "price_rp": 585,
+    "price_be": 1350,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Fiora",
+    "image": "champions/Fiora.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "skirmisher"
+  },
+  {
+    "category": "champions",
+    "name": "Fizz",
+    "image": "champions/Fizz.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "assassin"
+  },
+  {
+    "category": "champions",
+    "name": "Galio",
+    "image": "champions/Galio.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "warden"
+  },
+  {
+    "category": "champions",
+    "name": "Gangplank",
+    "image": "champions/Gangplank.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Garen",
+    "image": "champions/Garen.jpg",
+    "price_rp": 260,
+    "price_be": 450,
+    "role": "juggernaut"
+  },
+  {
+    "category": "champions",
+    "name": "Gnar",
+    "image": "champions/Gnar.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Gragas",
+    "image": "champions/Gragas.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "vanguard"
+  },
+  {
+    "category": "champions",
+    "name": "Graves",
+    "image": "champions/Graves.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Gwen",
+    "image": "champions/Gwen.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "skirmisher"
+  },
+  {
+    "category": "champions",
+    "name": "Hecarim",
+    "image": "champions/Hecarim.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "diver"
+  },
+  {
+    "category": "champions",
+    "name": "Heimerdinger",
+    "image": "champions/Heimerdinger.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Irelia",
+    "image": "champions/Irelia.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "diver"
+  },
+  {
+    "category": "champions",
+    "name": "Illaoi",
+    "image": "champions/Illaoi.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "juggernaut"
+  },
+  {
+    "category": "champions",
+    "name": "Janna",
+    "image": "champions/Janna.jpg",
+    "price_rp": 585,
+    "price_be": 1350,
+    "role": "enchanter"
+  },
+  {
+    "category": "champions",
+    "name": "Ivern",
+    "image": "champions/Ivern.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "catcher"
+  },
+  {
+    "category": "champions",
+    "name": "Jarvan IV",
+    "image": "champions/Jarvan_IV.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "diver"
+  },
+  {
+    "category": "champions",
+    "name": "Jax",
+    "image": "champions/Jax.jpg",
+    "price_rp": 585,
+    "price_be": 1350,
+    "role": "skirmisher"
+  },
+  {
+    "category": "champions",
+    "name": "Jayce",
+    "image": "champions/Jayce.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "artillery"
+  },
+  {
+    "category": "champions",
+    "name": "Jhin",
+    "image": "champions/Jhin.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "marksman",
+    "role_b": "catcher"
+  },
+  {
+    "category": "champions",
+    "name": "Jinx",
+    "image": "champions/Jinx.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Kai'Sa",
+    "image": "champions/Kai_Sa.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Kalista",
+    "image": "champions/Kalista.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Karma",
+    "image": "champions/Karma.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "enchanter",
+    "role_b": "burst"
+  },
+  {
+    "category": "champions",
+    "name": "Karthus",
+    "image": "champions/Karthus.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "battlemage"
+  },
+  {
+    "category": "champions",
+    "name": "Kassadin",
+    "image": "champions/Kassadin.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "assassin"
+  },
+  {
+    "category": "champions",
+    "name": "Kayle",
+    "image": "champions/Kayle.jpg",
+    "price_rp": 260,
+    "price_be": 450,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Katarina",
+    "image": "champions/Katarina.jpg",
+    "price_rp": 790,
+    "price_be": 3150,
+    "role": "assassin"
+  },
+  {
+    "category": "champions",
+    "name": "Kayn",
+    "image": "champions/Kayn.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "skirmisher"
+  },
+  {
+    "category": "champions",
+    "name": "Kennen",
+    "image": "champions/Kennen.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "specialist"
+  },
+  {
+    "category": "champions",
+    "name": "Kha'Zix",
+    "image": "champions/Kha_Zix.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "assassin"
+  },
+  {
+    "category": "champions",
+    "name": "Kindred",
+    "image": "champions/Kindred.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "marksman"
+  },
+  {
+    "category": "champions",
+    "name": "Kled",
+    "image": "champions/Kled.jpg",
+    "price_rp": 975,
+    "price_be": 6300,
+    "role": "skirmisher"
+  },
+  {
+    "category": "champions",
+    "name": "Kog'Maw",
+    "image": "champions/Kog_Maw.jpg",
+    "price_rp": 880,
+    "price_be": 4800,
+    "role": "marksman"
+  }
+]

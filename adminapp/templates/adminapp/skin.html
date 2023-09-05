@@ -1,0 +1,15 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container_auth">
+    <img src="{{ object.image.url }}" alt="{{ object.name }}">
+    <h1 class="auth_h1">{{ object.name }}</h1>
+    <a href="{% url 'admin:champion_detail' pk=object.champion.pk %}" class="auth_button">
+        <h1 class="auth_h1">{{ object.champion.name }}</h1>
+    </a>
+    <h1 class="auth_h1">{{ object.price_rp }} RP</h1>
+    <h1 class="auth_h1">{{ object.division|title }}</h1>
+    <a href="{% url 'admin:skin_list' %}" class="auth_link">Skins</a>
+</div>
+{% endblock %}

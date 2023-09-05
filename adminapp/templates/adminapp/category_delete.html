@@ -1,0 +1,14 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container_auth">
+<form action="{% url 'admin:category_delete' pk=category.pk %}" class="auth_form" method="post">
+    {% csrf_token %}
+    <h1 class="auth_h1">Do you really want to delete category "{{ category.name }}"?</h1>
+
+    <input type="submit" class="auth_button" value="Yes">
+</form>
+    <a href="{% url 'admin:category_list' %}" class="auth_link">No</a>
+</div>
+{% endblock %}

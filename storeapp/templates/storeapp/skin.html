@@ -1,0 +1,35 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+    <div class="add_content">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="champion_img">
+        <h4 class="name">{{ product.name }}</h4>
+        {% if product.pk not in owned_skins and product.champion.pk in owned_champs %}
+        <div class="buy_block buy_block_one">
+            <a href="{% url 'basket:add' cat='skins' pk=product.pk method='rp' %}" class="link">
+            <div class="buy_subblock">
+                <img src="{% static 'img/RP.png' %}" alt="RP" class="price_img">
+                <p class="price">{{ product.price_rp }}</p>
+            </div>
+            </a>
+        </div>
+        {% elif product.champion.pk not in owned_champs %}
+        <div class="buy_block buy_block_one">
+            <div class="buy_subblock">
+                <a href="{% url 'store:add' cat='champions' pk=product.champion.pk %}" class="price link">BUY CHAMPION</a>
+            </div>
+        </div>
+        {% else %}
+        <div class="buy_block buy_block_one">
+            <div class="buy_subblock">
+                <p class="price">OWNED</p>
+            </div>
+        </div>
+        {% endif %}
+        <a href="{% url 'store:category' 'skins' %}" class="back">Go to store</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container_auth">
+    <img src="{{ object.icon.url }}" alt="{{ object.name }}">
+    <h1 class="auth_h1">{{ object.nickname }}</h1>
+    <h1 class="auth_h1">{{ object.username }}</h1>
+    <h1 class="auth_h1">{{ object.age }}</h1>
+    <h1 class="auth_h1">{{ object.rp }} RP</h1>
+    <h1 class="auth_h1">{{ object.blue_essence }} BE</h1>
+    <h1 class="auth_h1">Active: {{ object.is_active }}</h1>
+    <a href="{% url 'admin:user_list' %}" class="auth_link">Users</a>
+</div>
+{% endblock %}

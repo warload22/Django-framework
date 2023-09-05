@@ -1,0 +1,7 @@
+<div class="sub_menu">
+    {% for cat in categories %}
+    <a href="{% url 'collection:category' cat.name %}"
+       {% if request.resolver_match.kwargs.name == cat.name %}class="sub_menu_link is_active"
+        {% else %}class="sub_menu_link"{% endif %}>{{ cat.name|title }}</a>
+    {% endfor %}
+</div>

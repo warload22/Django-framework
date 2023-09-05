@@ -1,0 +1,18 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container_auth container_admin_list">
+    <div class="admin_object">
+        <a href="{% url 'admin:category_create' %}" class="auth_link">+ Create a new category</a>
+    </div>
+    {% for category in categories %}
+    <div class="admin_object">
+        <h1 class="auth_h1">{{ category.name|title }}</h1>
+
+        <a href="{% url 'admin:category_edit' pk=category.pk %}" class="auth_button">Edit</a>
+        <a href="{% url 'admin:category_delete' pk=category.pk %}" class="auth_button">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

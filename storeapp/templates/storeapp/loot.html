@@ -1,0 +1,8 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+{% include 'storeapp/includes/inc_store_menu.html' %}
+<div class="purchase_block">
+    <a href="{% url 'order:list' %}" class='purchase_link'>Purchase</a>
+</div>
+{% endblock %}

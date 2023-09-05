@@ -1,0 +1,38 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="collection_champion_content">
+    <div class="champion_img_block">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="champion_img">
+        <div class="champ_button">
+            {% if product.pk in owned_champs %}
+            <a href="{% url 'basket:remove' 'champions' product.pk %}" class="button_text">DELETE</a>
+            {% else %}
+            <a href="{% url 'store:add' cat='champions' pk=product.pk %}" class="button_link">UNLOCK</a>
+            {% endif %}
+        </div>
+    </div>
+    <h4 class="champion_name">{{ champ.name }}</h4>
+    <div class="skins_block">
+        {% for skin in skins %}
+        <div class="skin_block">
+            <div class="skin_img_block">
+                <img src="{{ skin.image.url }}" alt="{{ skin.name }}" class="skin_img">
+                <div class="skin_button">
+                    {% if skin.pk in owned_skins %}
+                    <a href="{% url 'basket:remove' 'skins' skin.pk %}" class="button_link">DELETE</a>
+                    {% elif product.pk in owned_champs %}
+                    <a href="{% url 'store:add' cat='skins' pk=skin.pk %}" class="button_link">UNLOCK</a>
+                    {% else %}
+                    <p class="button_text">UNAVAILABLE</p>
+                    {% endif %}
+                </div>
+            </div>
+            <h6 class="skin_name">{{ skin.name }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <a href="{% url 'collection:category' 'champions' %}" class="back">Collection</a>
+</div>
+{% endblock %}

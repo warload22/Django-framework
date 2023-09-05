@@ -1,0 +1,67 @@
+{% load static %}
+{% load my_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ title|title }}{% endblock %}</title>
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css'%}">
+    {% endblock %}
+    {% block js %}
+    {% endblock %}
+</head>
+
+<body>
+    <div class="container">
+        {% block header %}
+        <hr class="top_line">
+        <div class="header">
+            <div class="header_left">
+                <img src="{% static 'img/LOL_icon.svg' %}" alt="logo" class="header_logo">
+                <hr class="header_line">
+                <a href="{% url 'home' %}" class="header_home">Home</a>
+                {% if request.user.is_superuser %}
+                <a href="{% url 'admin:user_list' %}" class="header_home">Admin</a>
+                {% endif %}
+            </div>
+            <div class="header_right">
+                {% include 'mainapp/includes/inc_main_menu.html' %}
+                <hr class="header_line">
+                <div class="header_currency">
+                    <div class="header_currency_subblock">
+                        <img src="{% static 'img/RP.svg' %}" alt="rp" class="currency_img">
+                        <h4 class="rp_count">{{ player.rp }}</h1>
+                    </div>
+                    <div class="header_currency_subblock">
+                        <img src="{% static 'img/Blue_Essence.svg' %}" alt="blue essence" class="currency_img">
+                        <h4 class="blue_count">{{ player.blue_essence }}</h1>
+                    </div>
+                </div>
+                <div class="header_user">
+                    <div class="user_icon_block">
+                        <img src="{{ user.icon.url|icon_default }}" alt="icon" class="user_icon">
+                    </div>
+                    <div class="user_right">
+                        <h4 class="user_name">{{ user.nickname|default:'Player' }}</h4>
+                        <div class="user_menu">
+                            <a href="{% url 'auth:edit' %}" class="user_menu_link">Edit</a>
+                            <a href="{% url 'auth:logout' %}" class="user_menu_link">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mid_line">
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>

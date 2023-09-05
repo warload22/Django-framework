@@ -1,0 +1,11 @@
+{% load static %}
+
+<a href="{% url 'collection:category' 'champions' %}"><img src="{% static 'img/Collection.svg' %}" alt="collection"
+{% if request.resolver_match.namespace == 'collection' %}class="menu_img is_active"
+{% else %}class="menu_img"{% endif %}></a>
+<a href=" {% url 'loot:index' %}"><img src="{% static 'img/Loot.svg' %}" alt="loot"
+{% if request.resolver_match.namespace == 'loot' %}class="menu_img is_active"
+{% else %}class="menu_img"{% endif %}></a>
+<a href="{% url 'store:index' %}"><img src="{% static 'img/Store.svg' %}" alt="store"
+{% if request.resolver_match.namespace == 'store' %}class="menu_img is_active"
+{% else %}class="menu_img"{% endif %}></a>

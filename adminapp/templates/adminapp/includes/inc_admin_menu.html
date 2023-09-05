@@ -1,0 +1,17 @@
+<div class="admin_menu">
+    <a href="{% url 'home' %}" class="menu_link">
+      Home
+    </a>
+    <a href="{% url 'admin:user_list' %}" {% if 'user' not in request.resolver_match.url_name %}class="menu_link"{% else %}class="menu_link is_active"{% endif %}>
+      Users
+    </a>
+    <a href="{% url 'admin:category_list' %}" {% if 'category' not in request.resolver_match.url_name %}class="menu_link"{% else %}class="menu_link is_active"{% endif %}>
+      Categories
+    </a>
+    <a href="{% url 'admin:champion_list' %}" {% if 'champion' not in request.resolver_match.url_name %}class="menu_link"{% else %}class="menu_link is_active"{% endif %}>
+      Champions
+    </a>
+    <a href="{% url 'admin:skin_list' %}" {% if 'skin' not in request.resolver_match.url_name %}class="menu_link"{% else %}class="menu_link is_active"{% endif %}>
+      Skins
+    </a>
+</div>

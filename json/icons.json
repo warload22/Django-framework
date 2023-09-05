@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Gromp",
+    "image": "icons/Gromp.png"
+  },
+  {
+    "name": "Hammer Time",
+    "image": "icons/Hammer_Time.png"
+  },
+  {
+    "name": "Lil Sprout",
+    "image": "icons/Lil_Sprout.png"
+  },
+  {
+    "name": "Mix Mix",
+    "image": "icons/Mix_Mix.png"
+  },
+  {
+    "name": "Ole Paw",
+    "image": "icons/Ole_Paw.png"
+  },
+  {
+    "name": "Shuriman Pyramids",
+    "image": "icons/Shuriman_Pyramids.png"
+  }
+]

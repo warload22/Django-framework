@@ -1,0 +1,13 @@
+{% extends 'orderapp/base.html' %}
+{% load static %}
+{% block content %}
+<div class="order_block">
+       <div class="order_text">Are you sure?</div>
+       <form action="{% url 'order:delete' object.pk %}" method="post">
+           {% csrf_token %}
+           <input class="order_button" type="submit" value="Delete">
+       </form>
+           <a href="{% url 'order:list' %}" class="order_button">Cancel</a>
+   </div>
+
+{% endblock %}

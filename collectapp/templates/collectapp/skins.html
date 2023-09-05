@@ -1,0 +1,74 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'collectapp/includes/inc_collection_menu.html' %}
+<div class="collection_content">
+    <div class="content_left">
+        <div class="skin_counter_block">
+            <div class="skin_counter">
+                <p class="counter">{{ owned_skins|length }}</p>
+            </div>
+            <div class="skin_tiers">
+                <div class="skin_tier"><img src="{% static 'img/Skin_Absolute.png' %}" alt="absolute"
+                        class="skin_tier_img">
+                    <p class="skin_tier_counter">{{ absolute_skins|length }}</p>
+                </div>
+                <div class="skin_tier"><img src="{% static 'img/Skin_Mythic.png' %}" alt="mythic" class="skin_tier_img">
+                    <p class="skin_tier_counter">{{ mythic_skins|length }}</p>
+                </div>
+                <div class="skin_tier"><img src="{% static 'img/Skin_Legendary.png' %}" alt="legendary"
+                        class="skin_tier_img">
+                    <p class="skin_tier_counter">{{ legendary_skins|length }}</p>
+                </div>
+                <div class="skin_tier"><img src="{% static 'img/Skin_Epic.png' %}" alt="epic" class="skin_tier_img">
+                    <p class="skin_tier_counter">{{ epic_skins|length }}</p>
+                </div>
+            </div>
+        </div>
+        <input type="text" placeholder="Search" class="search">
+        <a href="#" class="show_unowned">Show Unowned</a>
+        <a href="#" class="show_unowned">Champion Owned</a>
+        <ul class="selection">
+            <li><a href="#" class="selection_link">All</a></li>
+            <li><a href="#" class="selection_link">Champion</a></li>
+            <li><a href="#" class="selection_link">Set</a></li>
+            <li><a href="#" class="selection_link">Tier</a></li>
+        </ul>
+    </div>
+    <div class="content_right">
+        {% for skin in skins %}
+        <a href="{% url 'collection:product' cat='skins' pk=skin.pk %}">
+        <div class="champion">
+            <div class="champion_img_block">
+                <img src="{{ skin.image.url }}" alt="{{ skin.name }}" {% if skin.pk not in owned_skins %}
+                     class="champion_img not_owned"{% else %}class="champion_img"{% endif %}>
+            </div>
+        </div>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="paginator_menu">
+        {% if skins.has_previous %}
+            <a href="{% url 'collection:page' 'skins' skins.previous_page_number %}">
+                ↿
+            </a>
+        {% else %}
+          <br>
+        {% endif %}
+          <p>
+              {% if skins %}
+                {{ skins.number }}/{{ skins.paginator.num_pages }}
+              {% endif %}
+          </p>
+        {% if skins.has_next %}
+            <a href="{% url 'collection:page' 'skins' skins.next_page_number %}">
+                ⇂
+            </a>
+        {% else %}
+          <br>
+        {% endif %}
+    
+        </div>
+</div>
+{% endblock %}

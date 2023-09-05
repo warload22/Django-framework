@@ -1,0 +1,40 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container_auth container_admin_list">
+    <div class="admin_object">
+        <a href="{% url 'admin:champion_create' %}" class="auth_link">+ Create a new champion</a>
+    </div>
+    {% for champion in object_list %}
+    <div class="admin_object">
+        <a href="{% url 'admin:champion_detail' pk=champion.pk %}" class="auth_button"><h1 class="auth_h1">{{ champion.name|title }}</h1></a>
+
+        <a href="{% url 'admin:champion_edit' pk=champion.pk %}" class="auth_button">Edit</a>
+        <a href="{% url 'admin:champion_delete' pk=champion.pk %}" class="auth_button">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+<div class="paginator_menu">
+    {% if page_obj.has_previous %}
+        <a href="{% url 'admin:champion_page' page_obj.previous_page_number %}">
+            ↼&nbsp
+        </a>
+    {% else %}
+        &nbsp&nbsp&nbsp
+    {% endif %}
+      <p>
+          {% if page_obj %}
+            {{ page_obj.number }}/{{ page_obj.paginator.num_pages }}
+          {% endif %}
+      </p>
+    {% if page_obj.has_next %}
+        <a href="{% url 'admin:champion_page' page_obj.next_page_number %}">
+            &nbsp⇁
+        </a>
+    {% else %}
+        &nbsp&nbsp&nbsp
+    {% endif %}
+
+    </div>
+{% endblock %}

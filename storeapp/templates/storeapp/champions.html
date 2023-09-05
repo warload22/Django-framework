@@ -1,0 +1,49 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'storeapp/includes/inc_store_menu.html' %}
+<div class="store_content">
+    <div class="content_left">
+        <input type="text" placeholder="Search" class="search">
+        <a href="#" class="show_unowned">Show Owned</a>
+        <ul class="selection">
+            <li><a href="#" class="selection_link">Price (RP)</a></li>
+            <li><a href="#" class="selection_link">Price (RP) desc</a></li>
+            <li><a href="#" class="selection_link">Price (BE)</a></li>
+            <li><a href="#" class="selection_link">Price (BE) desc</a></li>
+            <li><a href="#" class="selection_link">Alphabet</a></li>
+            <li><a href="#" class="selection_link">Alphabet desc</a></li>
+        </ul>
+        <ul class="selection">
+            {% for role in roles %}
+            <li>
+                <a href="{% url 'store:champs' name='champions' role=role %}" class="selection_link">{{ role|title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="content_right">
+        {% for champ in champions %}
+        <a {% if champ.pk not in owned_champs %}href="{% url 'store:add' cat='champions' pk=champ.pk %}"{% else %}
+           href="#"{% endif %} class="store_link">
+            <div class="champion">
+                <img src="{{ champ.image.url }}" alt="{{ champ.name }}" {% if champ.pk not in owned_champs %}
+                     class="champion_img not_owned"{% else %}class="champion_img"{% endif %}>
+                <p class="champion_name">{{ champ.name|title }}</p>
+                <div class="champion_price_big">
+                    <div class="champion_price_small">
+                        <img src="{% static 'img/RP.png' %}" alt="RP" class="champion_price_img">
+                        <p class="champion_price">{{ champ.price_rp }}</p>
+                    </div>
+                    <div class="champion_price_small">
+                        <img src="{% static 'img/Blue_Essence.png' %}" alt="BE" class="champion_price_img">
+                        <p class="champion_price">{{ champ.price_be }}</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

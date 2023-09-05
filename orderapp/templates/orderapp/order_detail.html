@@ -1,0 +1,32 @@
+{% extends 'orderapp/base.html' %}
+{% load static %}
+{% load my_tags %}
+{% block content %}
+{% include 'orderapp/includes/inc_summary.html' %}
+<div class="order_block">
+       {% for item in object.orderitems.select_related %}
+           <div class="order_item">
+               <img src="{{ item.material.image|loot }}"
+                    alt="{{ item.material.name }}">
+               <div> {{ item.material.name }} </div>
+               <div> {{ item.material.price_rp }} RP
+                   x {{ item.quantity }}
+                   = {{ item.cost }} RP </div>
+           </div>
+       {% endfor %}
+    <div class="order_button_block">
+       {% if object.status == "FM" or object.status == "STP" %}
+           <a href="{% url 'order:delete' object.pk %}" class="order_button">Delete</a>
+       {% endif %}
+       {% if object.status == 'FM' %}
+        <a href="{% url 'order:update' object.pk %}" class="order_button">Update</a>
+           <a href="{% url 'order:proceed' object.pk %}" class="order_button">Buy</a>
+       {% elif object.status == 'STP' %}
+           <a href="{% url 'order:payment' object.pk %}" class="order_button">Pay</a>
+       {% endif %}
+           <a href="{% url 'order:list' %}" class="order_button">Go back</a>
+           <a href="{% url 'home' %}" class="order_button">Home</a>
+        </div>
+   </div>
+
+{% endblock %}
